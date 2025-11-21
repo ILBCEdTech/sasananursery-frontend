@@ -60,27 +60,27 @@
       "name": "ရှင်စန္ဒနသာရ"
     },
     {
-      "img": "https://sasananursery.com/img/monks/1730107341.jpg",
+      "img": "img/team/01.jpg",
       "name": "ရှင်ပါမောက္ခ"
     },
     {
-      "img": "https://sasananursery.com/img/monks/1747992536.jpg",
+      "img": "img/team/01.jpg",
       "name": "ရှင်ဝဇိရဉာဏ"
     },
     {
-      "img": "https://sasananursery.com/img/monks/1730423569.jpg",
+      "img": "img/team/01.jpg",
       "name": "ရှင်သိက္ခာနန္ဒ"
     },
     {
-      "img": "https://sasananursery.com/img/monks/1729415362.jpg",
+      "img": "img/team/01.jpg",
       "name": "ရှင်ဝိစက္ခဏ"
     },
     {
-      "img": "https://sasananursery.com/img/monks/1730106274.jpg",
+      "img": "img/team/01.jpg",
       "name": "ရှင်သောဘနာစာရ"
     },
     {
-      "img": "https://sasananursery.com/img/monks/1730423445.jpg",
+      "img": "img/team/01.jpg",
       "name": "ရှင်ပညာဗလ"
     },
     {
@@ -99,17 +99,14 @@
   "Features": [
     {
       "icon": "fa fa-comments-o",
-      "title": "ဝန်ထမ်းများ ခေါ်ယူခြင်း",
       "text": "ရန်ကုန်တိုင်းဒေသကြီး၊ လှည်းကူး မြို့နယ်ရှိ သာသနာ့ပျိုးဥယျာဥ် ဆောက်လုပ်ရေး စီမံကိန်းအတွက် အောက်ဖော်ပြပါ continue reading…"
     },
     {
       "icon": "fa fa-bullhorn",
-      "title": "ဝန်ထမ်းများ ခေါ်ယူခြင်း",
       "text": "ရန်ကုန်တိုင်းဒေသကြီး၊ လှည်းကူး မြို့နယ်ရှိ သာသနာ့ပျိုးဥယျာဥ် ဆောက်လုပ်ရေး စီမံကိန်းအတွက် အောက်ဖော်ပြပါ continue reading…"
     },
     {
       "icon": "fa fa-group",
-      "title": "ဝန်ထမ်းများ ခေါ်ယူခြင်း",
       "text": "ရန်ကုန်တိုင်းဒေသကြီး၊ လှည်းကူး မြို့နယ်ရှိ သာသနာ့ပျိုးဥယျာဥ် ဆောက်လုပ်ရေး စီမံကိန်းအတွက် အောက်ဖော်ပြပါ continue reading…"
     }
   ],

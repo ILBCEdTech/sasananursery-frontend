@@ -1,38 +1,52 @@
 import React, { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./components/Home";
 import { Features } from "./components/features";
 import { About } from "./components/about";
-import { Aim } from "./components/aim";
-import How from "./components/how";
 import { Team } from "./components/Team";
-import { Contact } from "./components/contact";
+import { Donate } from "./components/donate";
 import JsonData from "./data/data.json";
+import AboutPage from "./pages/AboutPage";
+import PaymentAccounts from "./pages/PaymentAccounts";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import { Footer } from "./components/footer";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
 });
 
+const HomePage = ({ landingPageData }) => (
+  <div>
+    <Home data={landingPageData.Header} />
+    <Features data={landingPageData.Features} />
+    <About
+      aboutData={landingPageData.About}
+      aimData={landingPageData.Aim}
+    />
+    <Team data={landingPageData.Team} />
+    <Donate />
+    <Footer />
+  </div>
+);
+
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
+
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
 
   return (
-    <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      <Aim data={landingPageData.Aim} />
-      <How data={landingPageData.How} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage landingPageData={landingPageData} />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/accounts" element={<PaymentAccounts />} />
+        <Route path="*" element={<HomePage landingPageData={landingPageData} />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

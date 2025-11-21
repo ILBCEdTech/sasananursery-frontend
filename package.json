@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^7.1.2",
     "emailjs-com": "^2.6.4",
     "framer-motion": "^12.23.12",
+    "lucide-react": "^0.554.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.6",

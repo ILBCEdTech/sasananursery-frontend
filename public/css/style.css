@@ -104,7 +104,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #5472D2 0%, #5472d2 100%);
+  background: #ffffff;
   content: "";
   transition: width 0.2s;
 }
@@ -125,7 +125,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #5472D2 0%, #5472d2 100%) !important;
+  background: #6f7d99!important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -153,7 +153,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5472d2 0%, #5472D2 100%);
+  background: #ffffff;
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -168,7 +168,7 @@ hr {
   text-transform: uppercase;
   color: #F0F2F5;
   background-color: #5472d2;
-  background-image: linear-gradient(to right, #5472d2 0%, #5472d2 100%);
+  background-image: none;
   border-radius: 12px;
   text-decoration: none;
   letter-spacing: 1px;
@@ -273,7 +273,7 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #5472D2 0%, #5472d2 100%);
+  background: #ffffff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -294,7 +294,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5472d2 0%, #5472D2 100%);
+  background: #ffffff;
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -336,7 +336,7 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #5472D2 0%, #5472d2 100%);
+  background: #ffffff;
   color: #F0F2F5;
 }
 #services .service-desc {
@@ -360,7 +360,7 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #5472D2 0%, #5472d2 100%);
+  background: #ffffff;
   border-radius: 50%;
   color: #F0F2F5;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -486,7 +486,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #5472D2 0%, #5472d2 100%);
+  background: #ffffff;
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {

@@ -1,35 +1,46 @@
 import React from "react";
 
-export const Team = (props) => {
+export const Team = ({ data }) => {
+  if (!data?.length) return null;
+
   return (
-    <div id="team" className="text-center">
+    <section id="team" className="speakers-section-three">
       <div className="container">
-        <div className="col-md-8 col-md-offset-2 section-title">
+        <div className="sec-title text-center">
           <h2>ရဟန်း / သာမဏေများ</h2>
+          <p>
+            သံဃာအဖွဲ့ဝင်များစွာကို တရားဦးရာကြီးများမျှဝေမှုပေးကာ ဆက်သွယ်မှုများကို
+            အပြိုင်အဆိုင်ကြားဖြတ်လမ်းညွှန်ပေးနေပါတယ်။
+          </p>
         </div>
-        <div id="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-3 col-sm-6 team">
-                  <h4>{d.name}</h4>
-                  <div className="thumbnail">
-                    {" "}
-                    <img src={d.img} alt="..." className="team-img" />
-                    <div className="caption">
-                      <p>{d.job}</p>
-                      <a
-                        href="#teams"
-                        className="btn btn-custom btn-lg page-scroll"
-                      >
-                        Read More
-                      </a>{" "}
-                    </div>
-                  </div>
+
+        <div className="row">
+          {data.map((member, index) => (
+            <div
+              key={`${member.name}-${index}`}
+              className="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
+            >
+              <div className="inner-box">
+                <div className="image-box">
+                  <figure className="image">
+                    <a href="#">
+                      <img src={member.img} alt={member.name} />
+                    </a>
+                  </figure>
                 </div>
-              ))
-            : "loading"}
+                <div className="info-box">
+                  <h4 className="name">
+                    <a href="#">{member.name}</a>
+                  </h4>
+                  <span className="designation">
+                    {member.designation || ""}
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
