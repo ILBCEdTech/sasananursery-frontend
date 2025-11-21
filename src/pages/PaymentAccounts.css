@@ -1,0 +1,250 @@
+.payment-page {
+  min-height: 100vh;
+  background: #f0f2f5;
+  position: relative;
+  padding: 10rem 1.25rem 4rem;
+  font-family: "Inter", "Poppins", system-ui, sans-serif;
+  color: #0f0f1f;
+  overflow: hidden;
+}
+
+.payment-page__glow {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 720px;
+  height: 720px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 60%);
+  transform: translateX(-50%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.payment-page__content {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.payment-page__intro {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  color: #FFCC00;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.payment-page__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.95rem;
+  color: inherit;
+  margin: 0;
+}
+
+.payment-page__intro h1 {
+  margin: 0.4rem 0;
+  color: inherit;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.3;
+}
+
+.payment-page__summary {
+  margin: 0;
+  color: inherit;
+  line-height: 1.6;
+  font-size: 16px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.payment-page__footer-note {
+  text-align: center;
+  color: #6A7282;
+  font-size: 12px;
+  margin: 2rem auto 0;
+  max-width: 520px;
+  letter-spacing: 0.05em;
+}
+
+.payment-page__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.account-card {
+  display: flex;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 30px 50px rgba(3, 5, 40, 0.25);
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.account-card--logo-right {
+  flex-direction: row-reverse;
+}
+
+.account-card__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem 1.1rem;
+  gap: 0.35rem;
+  min-width: 200px;
+  color: #1c2143;
+  text-align: center;
+  background: #fff;
+  border-radius: 30px 0 0 30px;
+  box-shadow: inset 0 0 0 1px rgba(17, 17, 64, 0.05);
+}
+
+.account-card--logo-right .account-card__brand {
+  border-radius: 0 30px 30px 0;
+}
+
+.account-card__brand-mark {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.account-card__brand-logo-wrap {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 0.75rem;
+  box-shadow: inset 0 0 0 1px rgba(17, 17, 64, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-card__brand-logo {
+  width: 100%;
+  height: 100%;
+  min-height: 56px;
+  object-fit: contain;
+  display: block;
+}
+
+.account-card__brand-caption {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.account-card__content {
+  flex: 1;
+  padding: 1.5rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.account-card__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.account-card__label {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #8e91a9;
+  margin: 0;
+}
+
+.account-card__value {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e1b3c;
+}
+
+.account-card__value-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f4f5ff;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1834;
+}
+
+.account-card__copy {
+  border: none;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(7, 12, 76, 0.25);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.account-card__copy:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px rgba(7, 12, 76, 0.35);
+}
+
+.account-card__copied {
+  font-size: 0.65rem;
+  color: #4d8bff;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .payment-page {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .payment-page__intro {
+    padding: 1.5rem 1.75rem;
+  }
+
+  .account-card {
+    flex-direction: column;
+    min-height: unset;
+  }
+
+  .account-card--logo-right {
+    flex-direction: column;
+  }
+
+  .account-card__brand {
+    border-radius: 32px 32px 0 0;
+    min-width: 100%;
+  }
+
+  .account-card__content {
+    padding: 1.5rem 1.5rem 2rem;
+  }
+}
