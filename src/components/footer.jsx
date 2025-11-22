@@ -65,19 +65,19 @@ export const Footer = () => {
               <h3>Useful Links</h3>
               <ul>
                 <li>
-                  <a href="#">ပင်မစာမျက်နှာ</a>
+                  <a href="/">ပင်မစာမျက်နှာ</a>
                 </li>
                 <li>
-                  <a href="#">အကြောင်းအရာ</a>
+                  <a href="/about">အကြောင်းအရာ</a>
                 </li>
                 <li>
-                  <a href="#">သာသနာ့အလှူ</a>
+                  <a href="/donors">သာသနာ့အလှူ</a>
                 </li>
                 <li>
-                  <a href="#">သတင်းများ</a>
+                  <a href="/news">သတင်းများ</a>
                 </li>
                 <li>
-                  <a href="#">ဓာတ်ပုံများ</a>
+                  <a href="/gallery">ဓာတ်ပုံများ</a>
                 </li>
               </ul>
             </div>

@@ -11,6 +11,7 @@ import NewsPage from "./pages/news";
 import PaymentAccounts from "./pages/PaymentAccounts";
 import ContactPage from "./pages/contact";
 import DonorsPage from "./pages/donors";
+import GalleryPage from "./pages/gallery";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { Footer } from "./components/footer";
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/accounts" element={<PaymentAccounts />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/donors" element={<DonorsPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
         <Route path="*" element={<HomePage landingPageData={landingPageData} />} />
       </Routes>
     </BrowserRouter>
