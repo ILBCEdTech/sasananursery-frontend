@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Facebook } from "lucide-react";
 
 const socialLinks = [
   {
@@ -111,7 +111,7 @@ export const Footer = () => {
             <div className="footer-row">
                 <div className="footer-col">
                   <div className="single-cta">
-                    <Phone aria-hidden="true" size={20} />
+                    <Facebook aria-hidden="true" size={20} />
                     <div className="cta-text">
                       <h4>Follow us</h4>
                       <span>www.facebook.com/SarsanaNurseryMonastery</span>
