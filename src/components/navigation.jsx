@@ -37,17 +37,17 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
+            <a href="/about" className="page-scroll">
                 အကြောင်းအရာ
               </a>
             </li>
             <li>
-              <a href="#donations" className="page-scroll">
+              <a href="/donors" className="page-scroll">
                 သာသနာ့အလှူ
               </a>
             </li>
             <li>
-              <a href="#news" className="page-scroll">
+              <a href="/news" className="page-scroll">
                 သတင်းများ
               </a>
             </li>
@@ -57,13 +57,13 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+              <a href="/contact" className="page-scroll">
                 ဆက်သွယ်ရန်
               </a>
             </li>
             <li>
               <a
-                href="#account"
+                href="https://ssn-admin.ilbc.edu.mm/admin/login"
                 className="page-scroll"
                 style={{
                   display: "inline-block",
