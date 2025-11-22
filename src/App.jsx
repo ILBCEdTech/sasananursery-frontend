@@ -7,6 +7,7 @@ import { Team } from "./components/Team";
 import { Donate } from "./components/donate";
 import JsonData from "./data/data.json";
 import AboutPage from "./pages/AboutPage";
+import NewsPage from "./pages/news";
 import PaymentAccounts from "./pages/PaymentAccounts";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -43,6 +44,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage landingPageData={landingPageData} />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/news" element={<NewsPage />} />
         <Route path="/accounts" element={<PaymentAccounts />} />
         <Route path="*" element={<HomePage landingPageData={landingPageData} />} />
       </Routes>

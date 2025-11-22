@@ -113,6 +113,15 @@ export const Footer = () => {
                   <div className="single-cta">
                     <Phone aria-hidden="true" size={20} />
                     <div className="cta-text">
+                      <h4>Follow us</h4>
+                      <span>www.facebook.com/SarsanaNurseryMonastery</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="footer-col">
+                  <div className="single-cta">
+                    <Phone aria-hidden="true" size={20} />
+                    <div className="cta-text">
                       <h4>Call us</h4>
                       <span>09-765003300, 09-795003300</span>
                     </div>
