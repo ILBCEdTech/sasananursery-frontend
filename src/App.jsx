@@ -9,6 +9,7 @@ import JsonData from "./data/data.json";
 import AboutPage from "./pages/AboutPage";
 import NewsPage from "./pages/news";
 import PaymentAccounts from "./pages/PaymentAccounts";
+import ContactPage from "./pages/contact";
 import DonorsPage from "./pages/donors";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -47,6 +48,7 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/accounts" element={<PaymentAccounts />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/donors" element={<DonorsPage />} />
         <Route path="*" element={<HomePage landingPageData={landingPageData} />} />
       </Routes>
