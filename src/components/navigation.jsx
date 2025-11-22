@@ -32,7 +32,7 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#home" className="page-scroll">
+              <a href="/" className="page-scroll">
                 ပင်မစာမျက်နှာ
               </a>
             </li>
