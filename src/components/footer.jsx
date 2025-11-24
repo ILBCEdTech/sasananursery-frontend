@@ -13,19 +13,19 @@ const socialLinks = [
 
 const galleryItems = [
   {
-    alt: "Professional montage",
+    alt: "စာအုပ်အလှူတော်",
     image:
-      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=70",
+      "img/news/new-1.jpg",
   },
   {
-    alt: "Woman with coffee mug",
+    alt: "ဝန်ထမ်းများ ခေါ်ယူခြင်း",
     image:
-      "https://images.unsplash.com/photo-1484981138541-3d074aa97716?auto=format&fit=crop&w=400&q=70",
+      "img/news/new-3.png",
   },
   {
-    alt: "Minimal workspace",
+    alt: "Facebook Post များ",
     image:
-      "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=400&q=70",
+      "img/news/new-2.jpg",
   },
 ];
 
@@ -46,19 +46,6 @@ export const Footer = () => {
             <p>
               သဲအင်းဂူတိုက်ခွဲ (၃၂) အောင်လံဆရာတော်ဘုရားကြီး၏သာသနာ့ပျိုးဥယျာဉ်ကျောင်းတိုက်
             </p>
-            <div className="footer-social-icon">
-              <span>Follow us</span>
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  aria-label={link.label}
-                  className={link.className}
-                >
-                  <img src={link.icon} alt={`${link.label} logo`} />
-                </a>
-              ))}
-            </div>
           </div>
           <div className="footer-links">
             <div>
@@ -90,7 +77,7 @@ export const Footer = () => {
               {galleryItems.map((item, index) => (
                 <a
                   key={`gallery-${index}`}
-                  href="#"
+                  href="/news"
                   aria-label={item.alt}
                   className="footer-gallery__item"
                 >
@@ -103,8 +90,8 @@ export const Footer = () => {
         <div className="footer-bottom">
           <div className="copyright-text">
             <p>
-              Copyright &copy; {currentYear}, All Right Reserved{" "}
-              <a href="#">သာသနာ့ပျိုးဥယျာဉ်ကျောင်းတိုက်</a>
+              Copyright &copy; {currentYear}, {" "}
+              <a href="/">သာသနာ့ပျိုးဥယျာဉ်ကျောင်းတိုက်</a>
             </p>
           </div>
           <div className="footer-cta footer-cta--compact">

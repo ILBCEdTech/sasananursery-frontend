@@ -23,14 +23,14 @@ export const Team = ({ data }) => {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <a href="#">
+                    <a href="/gallery">
                       <img src={member.img} alt={member.name} />
                     </a>
                   </figure>
                 </div>
                 <div className="info-box">
                   <h4 className="name">
-                    <a href="#">{member.name}</a>
+                    <a href="/gallery">{member.name}</a>
                   </h4>
                   <span className="designation">
                     {member.designation || ""}

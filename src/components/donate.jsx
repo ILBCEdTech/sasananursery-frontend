@@ -32,8 +32,7 @@ export const Donate = () => (
         <div className="contact-page-map">
           <iframe
             title="Monastery location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109741.02912911311!2d76.69348873658222!3d30.73506264436677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1553497921355"
-            sound="0"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15259.132572683468!2d96.1954226!3d17.0343039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19b5a4b621345%3A0x5755adae7021ec6a!2sSarsana%20Nursery%20Monastery!5e0!3m2!1sen!2smm!4v1568866626397!5m2!1sen!2smm"
             allowFullScreen
             loading="lazy"
           />

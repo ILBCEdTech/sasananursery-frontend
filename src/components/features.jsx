@@ -3,23 +3,23 @@ import React from "react";
 const defaultCards = [
   {
     date: "Nov 13, 2025",
-    category: "ဝန်ထမ်းများ ခေါ်ယူခြင်း",
+    category: "စာအုပ်အလှူတော်",
     image:
-      "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?q=80&w=2072&auto=format&fit=crop",
+      "img/news/new-1.jpg",
     link: "/news",
   },
   {
     date: "Nov 13, 2025",
     category: "ဝန်ထမ်းများ ခေါ်ယူခြင်း",
     image:
-      "https://images.unsplash.com/photo-1518364538800-6bae3c2ea0f2?q=80&w=2071&auto=format&fit=crop",
+      "img/news/new-3.png",
     link: "/news",
   },
   {
     date: "Nov 13, 2025",
-    category: "ဝန်ထမ်းများ ခေါ်ယူခြင်း",
+    category: "Facebook Post များ",
     image:
-      "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2072&auto=format&fit=crop",
+      "img/news/new-2.jpg",
     link: "/news",
   },
 ];

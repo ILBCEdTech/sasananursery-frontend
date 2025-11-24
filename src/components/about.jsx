@@ -1,4 +1,5 @@
 import React from "react";
+import { CheckCircle2 } from "lucide-react";
 
 const defaultBullets = [
   "Community engagement programs and spiritual dialogue.",
@@ -30,11 +31,14 @@ export const About = ({ aboutData, aimData }) => {
               <div className="text">{paragraph}</div>
               <ul className="list-style-one">
                 {bullets.map((bullet, index) => (
-                  <li key={index}>{bullet}</li>
+                  <li key={index}>
+                    <CheckCircle2 aria-hidden="true" />
+                    {bullet}
+                  </li>
                 ))}
               </ul>
               <div className="btn-box">
-                <a href="#contact" className="theme-btn btn-style-one">
+                <a href="/about" className="theme-btn btn-style-one">
                   Learn More
                 </a>
               </div>

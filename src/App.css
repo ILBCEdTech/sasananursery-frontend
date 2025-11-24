@@ -373,32 +373,20 @@ body {
 }
 
 .about-section .list-style-one li {
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-size: 16px;
   line-height: 26px;
   color: #222222;
   font-weight: 400;
-  padding-left: 35px;
   margin-bottom: 12px;
 }
 
-.about-section .list-style-one li:before {
-  content: "\f058";
-  position: absolute;
-  left: 0;
-  top: 0px;
-  display: block;
-  font-size: 18px;
-  padding: 0px;
+.about-section .list-style-one li svg {
   color: #ffd400;
-  font-weight: 600;
-  -moz-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1.6;
-  font-family: "Font Awesome 5 Free";
+  width: 20px;
+  height: 20px;
 }
 
 .about-section .list-style-one li a:hover {
@@ -1098,7 +1086,8 @@ body {
 
 .news-card__excerpt {
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 14px;
+  color: #fff;
   line-height: 1.4;
 }
 
