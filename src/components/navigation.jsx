@@ -37,25 +37,101 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-            <a href="/about" className="page-scroll">
+              <a href="/about" className="page-scroll">
                 အကြောင်းအရာ
               </a>
             </li>
-            <li>
-              <a href="/donors" className="page-scroll">
+
+            <li className="dropdown">
+              <a
+                href="#"
+                className="page-scroll dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 သာသနာ့အလှူ
+                <img
+                  src="/img/icons/dropdown.png"
+                  alt=""
+                  className="dropdown-icon"
+                  aria-hidden="true"
+                />
               </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <a href="/accounts" className="page-scroll">
+                    လှူဒါန်းရန်
+                  </a>
+                </li>
+                <li>
+                  <a href="/donors" className="page-scroll">
+                    အလှူရှင်စာရင်း
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="/news" className="page-scroll">
+
+            <li className="dropdown">
+              <a
+                href="#"
+                className="page-scroll dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 သတင်းများ
+                <img
+                  src="/img/icons/dropdown.png"
+                  alt=""
+                  className="dropdown-icon"
+                  aria-hidden="true"
+                />
               </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <a href="/news" className="page-scroll">
+                    Facebook သတင်းများ
+                  </a>
+                </li>
+                <li>
+                  <a href="/newsfeed" className="page-scroll">
+                    ကျောင်းတိုက်သတင်းများ
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="/gallery" className="page-scroll">
+
+            <li className="dropdown">
+              <a
+                href="#"
+                className="page-scroll dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 ဓာတ်ပုံများ
+                <img
+                  src="/img/icons/dropdown.png"
+                  alt=""
+                  className="dropdown-icon"
+                  aria-hidden="true"
+                />
               </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <a href="/gallery" className="page-scroll">
+                    သာမဏေများ
+                  </a>
+                </li>
+                <li>
+                  <a href="/gallery" className="page-scroll">
+                    ကျောင်းတိုက်လှုပ်ရှားမှုများ
+                  </a>
+                </li>
+              </ul>
             </li>
+
             <li>
               <a href="/contact" className="page-scroll">
                 ဆက်သွယ်ရန်

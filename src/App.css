@@ -21,11 +21,12 @@
 
 body {
   font-family: "Myanmar Text", "Inter", "Poppins", system-ui, sans-serif;
+  background: #f0f2f5;
 }
 
 .hero-page {
   width: 100%;
-  background: #fff;
+  background: #f0f2f5;
   font-family: "Inter", "Poppins", system-ui, sans-serif;
   color: var(--deep-navy);
 }
@@ -148,6 +149,19 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.dropdown-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  margin-left: 0.4rem;
 }
 
 .nav-icons button {

@@ -8,6 +8,7 @@ import { Donate } from "./components/donate";
 import JsonData from "./data/data.json";
 import AboutPage from "./pages/AboutPage";
 import NewsPage from "./pages/news";
+import NewsfeedPage from "./pages/newsfeed";
 import PaymentAccounts from "./pages/PaymentAccounts";
 import ContactPage from "./pages/contact";
 import DonorsPage from "./pages/donors";
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/" element={<HomePage landingPageData={landingPageData} />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/news" element={<NewsPage />} />
+        <Route path="/newsfeed" element={<NewsfeedPage />} />
         <Route path="/accounts" element={<PaymentAccounts />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/donors" element={<DonorsPage />} />
