@@ -69,6 +69,11 @@ export const Navigation = (props) => {
                     အလှူရှင်စာရင်း
                   </a>
                 </li>
+                <li>
+                  <a href="/donation-history" className="page-scroll">
+                    အလှူမှတ်တမ်း
+                  </a>
+                </li>
               </ul>
             </li>
 

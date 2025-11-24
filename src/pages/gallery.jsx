@@ -73,7 +73,7 @@ const GalleryPage = () => (
       <div className="gallery-page__content">
         <header className="gallery-page__hero">
           <p className="gallery-page__eyebrow">ဓာတ်ပုံများ</p>
-          <h1 className="gallery-page__title">Sasan Nursery Gallery</h1>
+          <h1 className="gallery-page__title">ကျောင်းတိုက်လှုပ်ရှားမှုများ</h1>
           <p className="gallery-page__subtitle">
             A curated selection of our community moments and nature highlights.
           </p>

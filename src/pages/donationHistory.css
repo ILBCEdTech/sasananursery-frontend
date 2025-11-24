@@ -1,0 +1,146 @@
+.donation-history-page {
+  background: #f7f7fb;
+  min-height: 100vh;
+  color: #20243a;
+}
+
+.donation-history-hero {
+  text-align: center;
+  color: #f7f7fb;
+  padding-top: 9rem;
+}
+
+.donation-history-subtitle {
+  letter-spacing: 0.4em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.donation-history-title {
+  font-size: clamp(2.5rem, 4vw, 3.2rem);
+  margin: 0;
+  color: #ffcc00;
+  font-weight: 700;
+  padding-top: 5rem;
+}
+
+.donation-history-description {
+  max-width: 680px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.donation-history-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+.donation-history-list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.donation-history-list__label {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.35em;
+  margin-bottom: 0.35rem;
+  color: #ffcc00;
+}
+
+.donation-history-list__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2441;
+}
+
+.donation-history-badge {
+  background: #ffcc00;
+  color: #1f1f1f;
+  padding: 0.55rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.donation-history-table-wrapper {
+  background: #fff;
+  border-radius: 32px;
+  padding: 2rem;
+  box-shadow: 0 20px 45px rgba(16, 19, 42, 0.12);
+  border: 1px solid rgba(16, 19, 42, 0.05);
+}
+
+.donation-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.25rem;
+}
+
+.donation-history-table th:first-child,
+.donation-history-table td:first-child {
+  width: 10%;
+  min-width: 150px;
+}
+
+.donation-history-table th:nth-child(2),
+.donation-history-table th:nth-child(3),
+.donation-history-table td:nth-child(2),
+.donation-history-table td:nth-child(3) {
+  width: 20%;
+}
+
+.donation-history-table thead th {
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #6b6f8a;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(31, 36, 65, 0.12);
+}
+
+.donation-history-table tbody tr {
+  border-bottom: 1px solid rgba(31, 36, 65, 0.08);
+}
+
+.donation-history-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.donation-history-table td {
+  padding: 1rem 0;
+  vertical-align: top;
+  color: #1f2441;
+}
+
+.donation-history-table td:first-child {
+  font-weight: 600;
+  color: #5472d2;
+}
+
+@media (max-width: 480px) {
+  .donation-history-hero {
+    padding-top: 3.5rem;
+  }
+
+  .donation-history-title {
+    font-size: 2rem;
+  }
+
+  .donation-history-list__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
