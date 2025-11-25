@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { Navigation } from "../components/navigation";
 import { Footer } from "../components/footer";
-import "./donors.css";
+import "./donors/donors.css";
 
 const donorRecords = [
   {

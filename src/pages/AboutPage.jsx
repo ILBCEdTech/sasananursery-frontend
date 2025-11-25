@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AboutPage.css";
+import "./AboutPage/AboutPage.css";
 import { Navigation } from "../components/navigation";
 import { Footer } from "../components/footer";
 

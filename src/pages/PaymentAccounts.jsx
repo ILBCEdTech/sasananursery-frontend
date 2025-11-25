@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { Navigation } from "../components/navigation";
-import "./PaymentAccounts.css";
+import "./PaymentAccounts/PaymentAccounts.css";
 
 const paymentCards = [
   {
