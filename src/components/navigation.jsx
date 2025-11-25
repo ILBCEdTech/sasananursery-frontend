@@ -125,7 +125,7 @@ export const Navigation = (props) => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a href="/gallery" className="page-scroll">
+                  <a href="/novices" className="page-scroll">
                     သာမဏေများ
                   </a>
                 </li>

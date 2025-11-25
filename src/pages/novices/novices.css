@@ -1,0 +1,117 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css");
+
+.novices-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  padding: 80px 16px;
+  font-family: inherit;
+}
+
+.novices-page__hero {
+  padding-top: 5rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #f4f6fb;
+}
+
+.novices-page__hero h3 {
+  font-weight: 600;
+  margin: 0;
+  color: #FFCC00;
+}
+
+.novices-page__main {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+}
+
+.novices-page * {
+  box-sizing: border-box;
+}
+
+.profile-card {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 22px rgba(51, 51, 51, 0.22);
+  transition: 0.6s;
+  margin: 0;
+}
+
+.profile-card:hover {
+  border-radius: 10px;
+  height: 260px;
+}
+
+.profile-card .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  z-index: 99;
+}
+
+.profile-card img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 22px rgba(51, 51, 51, 0.22);
+  transition: 0.6s;
+  display: block;
+}
+
+.profile-card:hover .img {
+  transform: translateY(-60px);
+}
+
+.profile-card:hover img {
+  border-radius: 10px;
+}
+
+.caption {
+  text-align: center;
+  transform: translateY(-80px);
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.profile-card:hover .caption {
+  opacity: 1;
+}
+
+.caption h3 {
+  font-size: 21px;
+  font-weight: 500;
+  color: #FFCC00;
+}
+
+.caption p {
+  font-size: 15px;
+  color: #0c52a1;
+  margin: 2px 0 9px;
+}
+
+@media (max-width: 768px) {
+  .novices-page__main {
+    gap: 18px;
+  }
+
+  .profile-card {
+    width: 180px;
+    height: 180px;
+    padding: 24px;
+  }
+}
