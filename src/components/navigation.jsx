@@ -43,8 +43,8 @@ export const Navigation = (props) => {
             </li>
 
             <li className="dropdown">
-              <a
-                href="#"
+              <button
+                type="button"
                 className="page-scroll dropdown-toggle"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -57,7 +57,7 @@ export const Navigation = (props) => {
                   className="dropdown-icon"
                   aria-hidden="true"
                 />
-              </a>
+              </button>
               <ul className="dropdown-menu">
                 <li>
                   <a href="/accounts" className="page-scroll">
@@ -78,8 +78,8 @@ export const Navigation = (props) => {
             </li>
 
             <li className="dropdown">
-              <a
-                href="#"
+              <button
+                type="button"
                 className="page-scroll dropdown-toggle"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -92,7 +92,7 @@ export const Navigation = (props) => {
                   className="dropdown-icon"
                   aria-hidden="true"
                 />
-              </a>
+              </button>
               <ul className="dropdown-menu">
                 <li>
                   <a href="/news" className="page-scroll">
@@ -113,8 +113,8 @@ export const Navigation = (props) => {
             </li>
 
             <li className="dropdown">
-              <a
-                href="#"
+              <button
+                type="button"
                 className="page-scroll dropdown-toggle"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -127,7 +127,7 @@ export const Navigation = (props) => {
                   className="dropdown-icon"
                   aria-hidden="true"
                 />
-              </a>
+              </button>
               <ul className="dropdown-menu">
                 <li>
                   <a href="/novices" className="page-scroll">
