@@ -15,6 +15,8 @@ import DonorsPage from "./pages/donors";
 import GalleryPage from "./pages/gallery";
 import DonationHistoryPage from "./pages/donationHistory";
 import NovicesPage from "./pages/novices";
+import NoviceDetailsPage from "./pages/noviceDetails";
+import VideosPage from "./pages/videos";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { Footer } from "./components/footer";
@@ -52,12 +54,14 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/newsfeed" element={<NewsfeedPage />} />
+        <Route path="/videos" element={<VideosPage />} />
         <Route path="/accounts" element={<PaymentAccounts />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/donors" element={<DonorsPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/donation-history" element={<DonationHistoryPage />} />
         <Route path="/novices" element={<NovicesPage />} />
+        <Route path="/novice-details" element={<NoviceDetailsPage />} />
         <Route path="*" element={<HomePage landingPageData={landingPageData} />} />
       </Routes>
     </BrowserRouter>

@@ -96,24 +96,62 @@ export const Footer = () => {
           </div>
           <div className="footer-cta footer-cta--compact">
             <div className="footer-row">
-                <div className="footer-col">
-                  <div className="single-cta">
-                    <Facebook aria-hidden="true" size={20} />
-                    <div className="cta-text">
-                      <h4>Follow us</h4>
-                      <span>www.facebook.com/SarsanaNurseryMonastery</span>
-                    </div>
+              <div className="footer-col">
+                <div className="single-cta">
+                  <Facebook aria-hidden="true" size={20} />
+                  <div className="cta-text">
+                    <h4>Follow us</h4>
+                    <span>www.facebook.com/SarsanaNurseryMonastery</span>
                   </div>
                 </div>
-                <div className="footer-col">
-                  <div className="single-cta">
-                    <Phone aria-hidden="true" size={20} />
-                    <div className="cta-text">
-                      <h4>Call us</h4>
-                      <span>09-765003300, 09-795003300</span>
-                    </div>
+              </div>
+              <div className="footer-col">
+                <div className="single-cta">
+                  <Phone aria-hidden="true" size={20} />
+                  <div className="cta-text">
+                    <h4>Call us</h4>
+                    <span>09-765003300, 09-795003300</span>
                   </div>
                 </div>
+              </div>
+              <div className="footer-col">
+                <div className="single-cta">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+                    alt="Telegram logo"
+                    aria-hidden="true"
+                  />
+                  <div className="cta-text">
+                    <h4>Telegram</h4>
+                    <a
+                      className="cta-link"
+                      href="https://t.me/SarsanaNurseryMonastery"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      t.me/SarsanaNurseryMonastery
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="footer-col">
+                <div className="single-cta">
+                  <img
+                    src="https://images.sftcdn.net/images/t_app-icon-m/p/038d9aec-96d2-11e6-bf4e-00163ec9f5fa/3644051220/viber-Viber-2.png"
+                    alt="Viber logo"
+                    aria-hidden="true"
+                  />
+                  <div className="cta-text">
+                    <h4>Viber</h4>
+                    <a
+                      className="cta-link"
+                      href="viber://chat?number=%2B959765003300"
+                    >
+                      +95 9 7650 03300
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

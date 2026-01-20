@@ -21,11 +21,29 @@ const infoItems = [
   },
   {
     label: "Address",
-    value: "100 Smith Street",
-    description: "Collingwood VIC 3066 AU",
+    value: "သဲအင်းဂူတိုက်ခွဲ (၃၂)",
+    description: "အောင်လံဆရာတော်ဘုရားကြီး၏သာသနာ့ပျိုးဥယျာဉ်ကျောင်းတိုက်",
     iconSrc: "/img/icons/location.png",
     iconBackground: "linear-gradient(135deg, #e5fbf0 0%, #c3fbdf 100%)",
     columnClass: "contact-info__item--column1",
+  },
+  {
+    label: "Telegram",
+    value: "@SarsanaNurseryMonastery",
+    description: "Quick updates and chat",
+    link: "https://t.me/SarsanaNurseryMonastery",
+    iconSrc:
+      "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+    iconBackground: "linear-gradient(135deg, #e3f2ff 0%, #c6e7ff 100%)",
+  },
+  {
+    label: "Viber",
+    value: "+95 9 7650 03300",
+    description: "Message us directly on Viber",
+    link: "viber://chat?number=%2B959765003300",
+    iconSrc:
+      "https://images.sftcdn.net/images/t_app-icon-m/p/038d9aec-96d2-11e6-bf4e-00163ec9f5fa/3644051220/viber-Viber-2.png",
+    iconBackground: "linear-gradient(135deg, #fde8ff 0%, #ffd7fb 100%)",
   },
 ];
 
@@ -111,7 +129,18 @@ const ContactPage = () => (
                 </span>
                 <div className="contact-info__text">
                   <p className="contact-info__label">{info.label}</p>
-                  <p className="contact-info__value">{info.value}</p>
+                  {info.link ? (
+                    <a
+                      className="contact-info__value contact-info__link"
+                      href={info.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {info.value}
+                    </a>
+                  ) : (
+                    <p className="contact-info__value">{info.value}</p>
+                  )}
                   {info.value2 && (
                     <p className="contact-info__value">{info.value2}</p>
                   )}

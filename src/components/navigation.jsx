@@ -104,6 +104,11 @@ export const Navigation = (props) => {
                     ကျောင်းတိုက်သတင်းများ
                   </a>
                 </li>
+                <li>
+                  <a href="/videos" className="page-scroll">
+                    ရုပ်သံဖိုင်များ
+                  </a>
+                </li>
               </ul>
             </li>
 
