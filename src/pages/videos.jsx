@@ -43,6 +43,9 @@ const fetchEmbeddedVideos = async (baseUrl) => {
   return response.json();
 };
 
+const menuItems = ["Discover", "Trending", "Streaming", "Playlist", "Bookmark"];
+const categoryItems = ["Live Stream", "Tutorial", "Competition", "Community"];
+
 const VideosPage = () => {
   const [videos, setVideos] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
