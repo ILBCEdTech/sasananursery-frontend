@@ -48,6 +48,11 @@ const resolveApiBaseUrl = () => {
   if (envBaseUrl) {
     return envBaseUrl;
   }
+
+  if (process.env.REACT_APP_API_PROXY === "true") {
+    return "/api";
+  }
+
   return "https://ssn-bk.ilbc.edu.mm";
 };
 
