@@ -48,7 +48,11 @@ export const About = ({ aboutData, aimData }) => {
           <div className="image-column col-lg-6 col-md-12 col-sm-12">
             <div className="inner-column wow fadeInLeft">
               <figure className="image-1">
-                <a href="#" className="lightbox-image" data-fancybox="images">
+                <a
+                  href="https://i.ibb.co/QP6Nmpf/image-1-about.jpg"
+                  className="lightbox-image"
+                  data-fancybox="images"
+                >
                   <img
                     src="https://i.ibb.co/QP6Nmpf/image-1-about.jpg"
                     alt="Monastery courtyard"
@@ -56,7 +60,11 @@ export const About = ({ aboutData, aimData }) => {
                 </a>
               </figure>
               <figure className="image-2">
-                <a href="#" className="lightbox-image" data-fancybox="images">
+                <a
+                  href="img/about-2.png"
+                  className="lightbox-image"
+                  data-fancybox="images"
+                >
                   <img src="img/about-2.png" alt="Monastic teaching" />
                 </a>
               </figure>

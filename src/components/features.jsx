@@ -60,7 +60,9 @@ export const Features = ({ data }) => {
               href={card.link}
               className="news-card__card-link"
               aria-label={card.title}
-            ></a>
+            >
+              <span className="sr-only">{card.title}</span>
+            </a>
             <div className="overlay"></div>
             <div className="wrap-cat">
               <span className="cat" data-hover={card.category}>

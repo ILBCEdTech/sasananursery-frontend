@@ -132,6 +132,9 @@ const VideosPage = () => {
 
   const heroVideos = filteredVideos.slice(0, 2);
   const mostWatchedVideos = filteredVideos.slice(2);
+  const searchAriaLabel = `Search ${
+    menuItems[0] ?? "Discover"
+  } and ${categoryItems[0] ?? "Community"}`;
 
   return (
     <>
@@ -150,6 +153,7 @@ const VideosPage = () => {
               <span>Search</span>
               <input
                 type="search"
+                aria-label={searchAriaLabel}
                 placeholder="Search videos, tags, or stories"
                 value={searchTerm}
                 onChange={(event) => setSearchTerm(event.target.value)}
