@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Navigation } from "../components/navigation";
 import { Footer } from "../components/footer";
+import fallbackVideos from "../data/videos.json";
 import "./videos/videos.css";
 
 const extractYouTubeInfo = (url) => {
@@ -43,6 +44,22 @@ const fetchEmbeddedVideos = async (baseUrl) => {
   return response.json();
 };
 
+const resolveApiBaseUrl = () => {
+  const envBaseUrl = (
+    process.env.REACT_APP_API_BASE_URL || process.env.NEXT_PUBLIC_API_BASE_URL
+  )?.replace(/\/$/, "");
+
+  if (envBaseUrl) {
+    return envBaseUrl;
+  }
+
+  if (typeof window !== "undefined" && window.location?.origin) {
+    return window.location.origin;
+  }
+
+  return "https://ssn-bk.ilbc.edu.mm";
+};
+
 const menuItems = ["Discover", "Trending", "Streaming", "Playlist", "Bookmark"];
 const categoryItems = ["Live Stream", "Tutorial", "Competition", "Community"];
 
@@ -51,10 +68,9 @@ const VideosPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [status, setStatus] = useState("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [fallbackNotice, setFallbackNotice] = useState("");
 
-  const apiBaseUrl = (
-    process.env.REACT_APP_API_BASE_URL || process.env.NEXT_PUBLIC_API_BASE_URL
-  )?.replace(/\/$/, "");
+  const apiBaseUrl = resolveApiBaseUrl();
 
   useEffect(() => {
     if (!apiBaseUrl) {
@@ -67,22 +83,37 @@ const VideosPage = () => {
 
     const loadVideos = async () => {
       setStatus("loading");
+      setFallbackNotice("");
+
       try {
         const data = await fetchEmbeddedVideos(apiBaseUrl);
         if (!isMounted) {
           return;
         }
+
+        let nextVideos = fallbackVideos;
+        let notice = "";
+
         if (Array.isArray(data) && data.length > 0) {
-          setVideos(data);
+          nextVideos = data;
+        } else {
+          notice =
+            "Video service returned no data; showing a curated preview list.";
         }
+
+        setVideos(nextVideos);
+        setFallbackNotice(notice);
         setStatus("idle");
       } catch (error) {
         if (!isMounted) {
           return;
         }
         console.error(error);
-        setErrorMessage("Unable to load videos right now.");
-        setStatus("error");
+        setVideos(fallbackVideos);
+        setFallbackNotice(
+          "Unable to reach the video service; displaying cached highlights."
+        );
+        setStatus("idle");
       }
     };
 
@@ -160,6 +191,10 @@ const VideosPage = () => {
               />
             </label>
           </div>
+
+          {fallbackNotice && (
+            <p className="videos-page__notice">{fallbackNotice}</p>
+          )}
 
           {status === "loading" && (
             <p className="videos-page__status">Loading videos…</p>
