@@ -44,9 +44,10 @@ export const Navigation = (props) => {
 
             <li className="dropdown">
               <a
-                href="#"
+                href="#!"
+                onClick={(event) => event.preventDefault()}
                 role="button"
-                className="page-scroll dropdown-toggle"
+                className="page-scroll dropdown-toggle dropdown-link-button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -80,9 +81,10 @@ export const Navigation = (props) => {
 
             <li className="dropdown">
               <a
-                href="#"
+                href="#!"
+                onClick={(event) => event.preventDefault()}
                 role="button"
-                className="page-scroll dropdown-toggle"
+                className="page-scroll dropdown-toggle dropdown-link-button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -116,9 +118,10 @@ export const Navigation = (props) => {
 
             <li className="dropdown">
               <a
-                href="#"
+                href="#!"
+                onClick={(event) => event.preventDefault()}
                 role="button"
-                className="page-scroll dropdown-toggle"
+                className="page-scroll dropdown-toggle dropdown-link-button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
