@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 const API_BASE_URL = (process.env.REACT_APP_API_BASE_URL?.replace(/\/$/, "") ?? "");
 
@@ -199,41 +199,6 @@ export const Features = ({ data }) => {
       }
     };
     fetchNovices();
-    return () => {
-      isMounted = false;
-    };
-  }, []);
-
-  useEffect(() => {
-    let isMounted = true;
-
-    const fetchLookup = async (endpoint, setter, idKeys, labelKeys) => {
-      try {
-        const response = await fetch(buildApiUrl(endpoint));
-        if (!response.ok) {
-          return;
-        }
-        const payload = normalizeList(await response.json());
-        const map = {};
-        payload.forEach((entry) => {
-          const id = idKeys
-            .map((key) => entry?.[key])
-            .find((value) => value !== undefined && value !== null);
-          const label = labelKeys
-            .map((key) => entry?.[key])
-            .find((value) => value !== undefined && value !== null);
-          if (id != null && label != null) {
-            map[String(id)] = String(label);
-          }
-        });
-        if (isMounted) {
-          setter(map);
-        }
-      } catch (err) {
-        console.error(`Error fetching ${endpoint}`, err);
-      }
-    };
-
     return () => {
       isMounted = false;
     };
