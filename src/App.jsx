@@ -61,7 +61,7 @@ const App = () => {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/donation-history" element={<DonationHistoryPage />} />
         <Route path="/novices" element={<NovicesPage />} />
-        <Route path="/novice-details" element={<NoviceDetailsPage />} />
+        <Route path="/novices/:id" element={<NoviceDetailsPage />} />
         <Route path="*" element={<HomePage landingPageData={landingPageData} />} />
       </Routes>
     </BrowserRouter>
